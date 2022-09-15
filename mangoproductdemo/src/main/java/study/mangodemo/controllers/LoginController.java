@@ -73,6 +73,22 @@ public class LoginController {
 		
 	}
 	
+	@GetMapping("/getallcustomers")
+	public List<CustomerInfo> GetAllcustomers()
+	{
+		return cservice.getAllCustomers();
+	}
+	
+	
+	@GetMapping("/getallfarmers")
+	public List<FarmerInfo> GetAllFarmers()
+	{
+		return fservice.getAllFarmers();
+	}
+	
+	
+	
+	
 //	@PostMapping("/add")
 //	public String create(@RequestBody Admin a)
 //	{
