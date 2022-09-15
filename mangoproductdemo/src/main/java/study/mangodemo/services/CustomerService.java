@@ -49,5 +49,14 @@ public class CustomerService {
 			
 		}
 		
+	
+		
+		//show all customers
+		public List<CustomerInfo> getAllCustomers()
+		{
+			
+			return crepo.findAll();
+		}
+		
 		
 }
