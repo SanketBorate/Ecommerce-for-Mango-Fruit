@@ -34,6 +34,10 @@ public class FarmerService {
 		
 	}
 	
-	
+		//show all farmers
+	public List<FarmerInfo> getAllFarmers()
+	{
+		return frepo.findAll();
+	}
 	
 }
