@@ -10,8 +10,6 @@ import Login from './pages/login';
 //import S1 from './pages/s1';
 import Home from './pages/home';
 import SignIn from './Signin/SignIn';
-import AdminHome from './Dashboard/AdminHome';
-import FarmerHome from './Dashboard/FarmerHome';
 
 
 
@@ -31,8 +29,7 @@ import FarmerHome from './Dashboard/FarmerHome';
           <Route path="/ourProduct" element={<OurProduct />} />
           <Route path="/login" element={<Login/>} />
           <Route path="/SignIn" element={<SignIn/>} />
-          <Route path="/AdminHome" element={<AdminHome/>} />
-          <Route path="/FarmerHome" element={<FarmerHome/>} />
+         
           </Route >
           
           
