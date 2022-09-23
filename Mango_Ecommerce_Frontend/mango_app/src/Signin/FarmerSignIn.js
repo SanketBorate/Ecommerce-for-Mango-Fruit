@@ -2,47 +2,57 @@ import { useState } from "react";
 // import { useDispatch, useSelector } from "react-redux"
 import { useNavigate } from "react-router";
 import axios, { Axios } from "axios";
+import Header from "../pages/header";
 
-export default function SignIn() {
+export default function CustomerSignIn() {
   let [user, setUser] = useState();
-  let [email, setEmail] = useState("");
-  let [pwd, setPassword] = useState("");
+  let [email,setEmail] =useState("");
+  let [pwd,setPassword] =useState("");
   let navigate = useNavigate();
-  let [actor, setActor] = useState(""); 
+  let [actor, setActor] = useState("");
   //const dispatch= useDispatch()
 
   function loginHandler() {
-    // if (actor === "farmer"){
-    var user = { emailid: email, password: pwd };
-    console.log("farmer", email);
+    //if (actor === "customer") {
+    var user= {emailid:email,password:pwd}  
+    console.log("customer", email);
 
-    axios.defaults.headers.post["Content-Type"] =
-      "application/json;charset=utf-8";
-    axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
+    axios.defaults.headers.post['Content-Type'] ='application/json;charset=utf-8';
+    axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+    
+      axios
+        .post("http://localhost:8080/customer/customerlogin",user
 
-    axios
-      .post("http://localhost:8080/farmer/farmerlogin", user)
-      .then((data) => {
-        console.log(data.data);
-        if (data.data === "authorized") {
-          alert("success");
-          sessionStorage.setItem("email" , email);
-          navigate("/FarmerHome");
-        } else {
-          alert("failed");
-          navigate("/FarmerSignIn");
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-        alert("error occured");
-      });
+
+       // crossOriginIsolated:true
+
+
+        )
+        .then((data) => {
+          console.log(data.data);
+          if (data.data !== null) {
+            alert("success");
+            sessionStorage.setItem("custlogin",JSON.stringify(data.data));
+            navigate("/CustomerHome");
+          } else {
+            alert("failed");
+            navigate("/CustomerSignIn");
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          alert("error occured");
+        });
     // }
+    
+      
+    
   }
 
   return (
     <>
-      <body>
+    <Header></Header>  
+      
         <section className="vh-100" style={{ "background-color": "#b6c6d8;" }}>
           <div className="container py-5 h-100">
             <div className="row d-flex justify-content-center align-items-center h-100">
@@ -51,7 +61,7 @@ export default function SignIn() {
                   <div className="row g-0">
                     <div className="col-md-8 col-lg-6 d-none d-md-block">
                       <img
-                        src="..assets/images/pro1.png"
+                        src="../assets/images/customer.jpg"
                         width="100%"
                         height="100%"
                         alt="login form"
@@ -73,7 +83,6 @@ export default function SignIn() {
                               Sign In
                             </span>
                           </div>
-
                           <div className="form-outline mb-4">
                             <input
                               type="email"
@@ -82,7 +91,7 @@ export default function SignIn() {
                               placeholder=" Email "
                               className="form-control form-control-lg"
                               onChange={(e) => {
-                                setEmail(e.target.value);
+                                setEmail( e.target.value );
                               }}
                             />
                             <label className="form-label" for="form2Example17">
@@ -97,7 +106,7 @@ export default function SignIn() {
                               name="pwd"
                               className="form-control form-control-lg"
                               onChange={(e) => {
-                                setPassword(e.target.value);
+                                setPassword( e.target.value );
                               }}
                             />
                             <label className="form-label" for="form2Example27">
@@ -121,8 +130,9 @@ export default function SignIn() {
                             style={{ color: "#393f81;" }}
                           >
                             Don't have an account?{" "}
+                            
                             <a
-                              href="./FarmerSignUp"
+                              href="./CustomerSignUp"
                               style={{ color: "#393f81;" }}
                             >
                               Register here
@@ -141,7 +151,8 @@ export default function SignIn() {
             </div>
           </div>
         </section>
-      </body>
+      
     </>
   );
 }
+
