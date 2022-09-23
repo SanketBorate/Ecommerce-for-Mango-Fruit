@@ -2,6 +2,7 @@ import { useState } from "react";
 // import { useDispatch, useSelector } from "react-redux"
 import { useNavigate } from "react-router";
 import axios, { Axios } from "axios";
+import Header from "../pages/header";
 
 export default function CustomerSignIn() {
   let [user, setUser] = useState();
@@ -29,9 +30,9 @@ export default function CustomerSignIn() {
         )
         .then((data) => {
           console.log(data.data);
-          if (data.data === "authorized") {
+          if (data.data !== null) {
             alert("success");
-            sessionStorage.setItem("email" , email);
+            sessionStorage.setItem("custlogin",JSON.stringify(data.data));
             navigate("/CustomerHome");
           } else {
             alert("failed");
@@ -50,7 +51,8 @@ export default function CustomerSignIn() {
 
   return (
     <>
-      <body>
+    <Header></Header>  
+      
         <section className="vh-100" style={{ "background-color": "#b6c6d8;" }}>
           <div className="container py-5 h-100">
             <div className="row d-flex justify-content-center align-items-center h-100">
@@ -59,7 +61,7 @@ export default function CustomerSignIn() {
                   <div className="row g-0">
                     <div className="col-md-8 col-lg-6 d-none d-md-block">
                       <img
-                        src="..assets/images/pro1.png"
+                        src="../assets/images/customer.jpg"
                         width="100%"
                         height="100%"
                         alt="login form"
@@ -149,7 +151,8 @@ export default function CustomerSignIn() {
             </div>
           </div>
         </section>
-      </body>
+      
     </>
   );
 }
+
