@@ -2,6 +2,7 @@ import { useState } from "react";
 // import { useDispatch, useSelector } from "react-redux"
 import { useNavigate } from "react-router";
 import axios  from "axios";
+import Header from "../pages/header";
 
 export default function AdminSignIn() {
   //let [user, setUser] = useState();
@@ -42,6 +43,9 @@ export default function AdminSignIn() {
 
   return (
     <>
+<Header></Header>
+    
+
       <body>
         <section className="vh-100" style={{ "background-color": "#b6c6d8;" }}>
           <div className="container py-5 h-100">
@@ -51,7 +55,7 @@ export default function AdminSignIn() {
                   <div className="row g-0">
                     <div className="col-md-8 col-lg-6 d-none d-md-block">
                       <img
-                        src="..assets/images/pro1.png"
+                        src="../assets/images/Admin.jpg"
                         width="100%"
                         height="100%"
                         alt="login form"
@@ -117,10 +121,10 @@ export default function AdminSignIn() {
                           </a>
                      
                         </form>
-                        <span>
+                        {/* <span>
                           {pwd}
                           {email}
-                        </span>
+                        </span> */}
                       </div>
                     </div>
                   </div>
@@ -130,6 +134,7 @@ export default function AdminSignIn() {
           </div>
         </section>
       </body>
-    </>
+  </>
   );
 }
+
