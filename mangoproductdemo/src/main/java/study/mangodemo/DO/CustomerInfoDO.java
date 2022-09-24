@@ -21,7 +21,6 @@ public class CustomerInfoDO {
 //		this.email_id = email_id;
 //		this.password = password;
 //	}
-//
 //	
 	
 	
