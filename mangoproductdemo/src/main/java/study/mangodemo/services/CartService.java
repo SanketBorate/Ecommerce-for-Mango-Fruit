@@ -88,14 +88,7 @@ public class CartService {
 	
 	
 	
-//	public boolean addtoCart(Cart c)
-//	{
-//		Cart c1= cartrepo.CustomerCart(c.getCustomerid(),c.getMangoid() );
-//		cartrepo.save(c1);
-//		
-//		return true;
-//		
-//	}
+
 	
 	
 }
