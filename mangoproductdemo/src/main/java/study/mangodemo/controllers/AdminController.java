@@ -41,11 +41,7 @@ public class AdminController {
 	{
 		
 		return  adservice.checkAdminLogin(admin.getEmailid(), admin.getPassword());
-//		if(a=="authorized")
-//		{
-//			return " AdminLogin Successfull-Welcome";
-//		}
-//		return " wrong password";
+		
 	}
 	
 	@GetMapping("/getallcustomers")
