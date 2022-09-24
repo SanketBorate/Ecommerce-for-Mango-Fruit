@@ -33,7 +33,7 @@ public class MangoController {
 //  		mangoservice.addmango(mango);
 //		return "record inserted";
 //	}
-////	
+//	
 	@GetMapping("/getAllvarieties")
 	public List<MangoInfo> GetAllVarieties()
 	{
