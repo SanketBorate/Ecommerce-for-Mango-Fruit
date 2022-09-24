@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
-function OurProduct() {
+ export default OurProduct function OurProduct() {
     return (
 
       <div>
@@ -70,4 +70,4 @@ function OurProduct() {
     )
   }
   
-  export default OurProduct;
+ 
