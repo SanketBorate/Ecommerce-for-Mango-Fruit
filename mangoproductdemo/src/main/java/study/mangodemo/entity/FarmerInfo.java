@@ -152,15 +152,6 @@ public class FarmerInfo {
 	
 
 
-//	public List<MangoInfo> getMango() {
-//		return mango;
-//	}
-//
-//	public void setMango(List<MangoInfo> mango) {
-//		this.mango = mango;
-//	}
-//
-//
 //	@Override
 //	public String toString() {
 //		return "FarmerInfo [farmer_id=" + farmer_id + ", first_name=" + first_name + ", last_name=" + last_name
