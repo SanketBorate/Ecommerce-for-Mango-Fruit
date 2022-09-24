@@ -58,31 +58,7 @@ public MangoInfo(int mangoid, String variety, String description, int priceperdo
 
 
 
-//
-//
-//	public String getVariety() {
-//		return variety;
-//	}
-//
-//
-//	public void setVariety(String variety) {
-//		this.variety = variety;
-//	}
-//
-//
-//	public String getDescription() {
-//		return description;
-//	}
-//
-//
-//	public void setDescription(String description) {
-//		this.description = description;
-//	}
-//
-//
-//	public int getPrice_per_dozen() {
-//		return price_per_dozen;
-//	}
+
 //
 //
 //	public void setPrice_per_dozen(int price_per_dozen) {
