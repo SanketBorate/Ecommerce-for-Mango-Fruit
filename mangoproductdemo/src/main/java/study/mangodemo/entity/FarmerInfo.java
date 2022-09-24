@@ -35,9 +35,7 @@ public class FarmerInfo {
 	@Column(name="contact_no")
 	private String contactno;
 	
-//	@Column(name="username")
-//	private String username;
-//	
+
 	
 	@Column(name="password")
 	private String password;
