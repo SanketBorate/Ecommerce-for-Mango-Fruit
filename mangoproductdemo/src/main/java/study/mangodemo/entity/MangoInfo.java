@@ -55,24 +55,6 @@ public MangoInfo(int mangoid, String variety, String description, int priceperdo
 
 
 
-
-
-
-
-//
-//
-//	public void setPrice_per_dozen(int price_per_dozen) {
-//		this.price_per_dozen = price_per_dozen;
-//	}
-//
-//
-//	@Override
-//	public String toString() {
-//		return "MangoInfo [mango_id=" + mango_id + ", variety=" + variety + ", description=" + description
-//				+ ", price_per_dozen=" + price_per_dozen + "]";
-//	}
-
-
 	public int getMangoid() {
 		return mangoid;
 	}
