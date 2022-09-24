@@ -106,11 +106,11 @@ public class CustomerOrder {
 		this.quantity = quantity;
 		this.date = date;
 	}
-	
-	
 	public CustomerOrder() {
 		// TODO Auto-generated constructor stub
 	};
+	
+	
 	
 	
 }
