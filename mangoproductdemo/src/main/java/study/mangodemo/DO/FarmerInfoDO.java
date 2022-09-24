@@ -10,7 +10,7 @@ public class FarmerInfoDO {
 
 
 
-
+//
 //	public String getEmail_id() {
 //		return email_id;
 //	}
