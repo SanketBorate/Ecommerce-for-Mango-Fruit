@@ -151,58 +151,7 @@ public class FarmerInfo {
 	
 	
 
-//
-//
-//	public String getEmail_id() {
-//		return email_id;
-//	}
-//
-//
-//	public void setEmail_id(String email_id) {
-//		this.email_id = email_id;
-//	}
-//
-//
-//	public String getContact_no() {
-//		return contact_no;
-//	}
-//
-//
-//	public void setContact_no(String contact_no) {
-//		this.contact_no = contact_no;
-//	}
 
-//
-//	public String getUsername() {
-//		return username;
-//	}
-//
-//
-//	public void setUsername(String username) {
-//		this.username = username;
-//	}
-
-
-//	public String getPassword() {
-//		return password;
-//	}
-//
-//
-//	public void setPassword(String password) {
-//		this.password = password;
-//	}
-//
-//	public FarmerInfo(int farmer_id, String first_name, String last_name, String email_id, String contact_no,
-//			String password) {
-//		super();
-//		this.farmer_id = farmer_id;
-//		this.first_name = first_name;
-//		this.last_name = last_name;
-//		this.email_id = email_id;
-//		this.contact_no = contact_no;
-//		this.password = password;
-//	}
-//
 //	public List<MangoInfo> getMango() {
 //		return mango;
 //	}
