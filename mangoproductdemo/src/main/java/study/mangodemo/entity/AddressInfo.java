@@ -219,27 +219,16 @@ public class AddressInfo {
 //
 //	
 //
-//	public AddressInfo(int address_id, int flat_no, String street_name, String city, String district, String state,
-//			int pincode) {
-//		super();
-//		this.address_id = address_id;
-//		this.flat_no = flat_no;
-//		this.street_name = street_name;
-//		this.city = city;
-//		this.district = district;
-//		this.state = state;
-//		this.pincode = pincode;
-//	}
+//	
 //
 //
-//
-//	@Override
-//	public String toString() {
-//		return "AddressInfo [address_id=" + address_id + ", customer=" + customer + ", flat_no=" + flat_no
-//				+ ", street_name=" + street_name + ", city=" + city + ", district=" + district + ", state=" + state
-//				+ ", pincode=" + pincode + "]";
-//	}
-//
+	@Override
+	public String toString() {
+		return "AddressInfo [address_id=" + address_id + ", customer=" + customer + ", flat_no=" + flat_no
+				+ ", street_name=" + street_name + ", city=" + city + ", district=" + district + ", state=" + state
+				+ ", pincode=" + pincode + "]";
+	}
+
 
 	
 
