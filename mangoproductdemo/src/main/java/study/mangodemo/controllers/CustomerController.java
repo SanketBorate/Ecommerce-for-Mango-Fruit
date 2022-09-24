@@ -41,13 +41,7 @@ public class CustomerController {
 		return  cservice.checkCustomerLogin(customer.getEmailid(),customer.getPassword() );
 		
 		
-//		boolean c=cservice.checkCustomerLogin(customer.getEmail_id(), customer.getPassword());
-//		if(c==true)
-//		{
-//			return    "Successfull-Welcome" ;//+ customer.getFirst_name();//double records
-//			
-//		}
-//		return " wrong password , try again ";
+
 		
 	}
 	
