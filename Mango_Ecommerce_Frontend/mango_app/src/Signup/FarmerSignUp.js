@@ -11,6 +11,7 @@ import {
 } from "react-bootstrap";
 import axios from "axios";
 
+//class component
 export default class FarmerSignUp extends React.Component {
   constructor(props) {
     super(props);
