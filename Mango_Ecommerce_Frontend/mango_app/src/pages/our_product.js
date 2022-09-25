@@ -14,7 +14,7 @@ function OurProduct() {
                </div>
             </div>
            
-            <div className="row">
+            <div className="row"> 
                <div className="col-lg-3 col-md-6 col-sm-6">
                   <div id="ho_bo" class="our_products">
                      <div className="product">
