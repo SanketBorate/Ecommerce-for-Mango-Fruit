@@ -9,7 +9,7 @@ export default function ViewProducts() {
   let [user, setUser] = useState([]);
   //let email=sessionStorage.getItem('email');
 
-  useEffect(() => {
+  useEffect(() => { 
     axios
       .get("http://localhost:8080/farmer/getmango/"+ fpro.email)
       .then((res) => {
