@@ -6,7 +6,7 @@ import { useEffect } from "react";
 function CustomerHome() {
   var customer=JSON.parse(sessionStorage.getItem("custlogin")) 
   // var email= sessionStorage.getItem('email');
-   let navigate=useNavigate();
+   let navigate=useNavigate(); 
   // console.log(email);
    useEffect(()=>{
       if(customer===null){
