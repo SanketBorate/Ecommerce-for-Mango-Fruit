@@ -12,7 +12,7 @@ function AdminHome() {
       navigate("/AdminSignIn");
     }
   }, []);
-
+  
   return (
     <div className="main-layout">
       {/* <div className="loader_bg">
