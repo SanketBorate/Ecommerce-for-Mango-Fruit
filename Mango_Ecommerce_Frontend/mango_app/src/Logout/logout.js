@@ -15,6 +15,7 @@ export default function Logout() {
 
 
     const logoutUser = () => {
+        
         // remove the logged users details from session storage
         // sessionStorage.removeItem('userId')
         // sessionStorage.removeItem('firstName')
@@ -32,9 +33,6 @@ export default function Logout() {
     }
 
     useEffect(() => { logoutUser() }, []);
-
-
-
     return (
         <div>
         </div >
