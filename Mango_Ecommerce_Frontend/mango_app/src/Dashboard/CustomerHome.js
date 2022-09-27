@@ -15,9 +15,6 @@ function CustomerHome() {
       }
    },[])
    
-   
-   
-   
    return (
       <div className="main-layout">
     
