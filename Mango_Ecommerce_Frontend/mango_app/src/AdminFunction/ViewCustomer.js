@@ -6,8 +6,6 @@ import axios from "axios";
 export default function ViewCustomer(){
    
         let [user, setUser] = useState([]);
-        
-      
         useEffect(() => {
           axios
             .get("http://localhost:8080/admin/getallcustomers",{})
