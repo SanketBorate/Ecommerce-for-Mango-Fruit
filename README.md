@@ -6,8 +6,11 @@
   Direct profit to Farmers and Customers.
  
 ### Used Technologies:
+
   -Backend: Spring Boot,JPA/Hibernate,MySQL.
+  
   -Frontend: HTML,CSS,Bootsrap,React.JS,JavaScript
+  
   -Other:Github,StarUML,draw.io
 
 #### Installation
@@ -17,9 +20,9 @@
      - Frontend will be manage in vscode Tool.
      - create new React project.
        npx create-react-app MangoEcommerceApp
-     - install node modules use below command
+     - install node modules use command
        npm install
-     - copy the files from respective folder from clone folder to new environment project folders.
+     - copy the files from clone folder to new environment project folders.
      - install the required dependancies as follows.
     
     "@emotion/react": "^11.10.4",
