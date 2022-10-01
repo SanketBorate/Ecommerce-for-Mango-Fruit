@@ -6,7 +6,7 @@
   Direct profit to Farmers and Customers.
 
 ### Installation
-  - Make use of cloned project folder on machine.
+  - Make a new folder on your machine and clone project using link https://github.com/SanketBorate/Ecommerce-for-Mango-Fruit.git.
 
   - Make new Environment to run the project.
     ** Frontend will be manage in vscode Tool.
@@ -16,7 +16,8 @@
        npm install
      - copy the files from respective folder from clone folder to new environment project folders.
      - install the required dependancies as follows.
-	  "@emotion/react": "^11.10.4",
+    
+    "@emotion/react": "^11.10.4",
     "@mui/icons-material": "^5.10.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
