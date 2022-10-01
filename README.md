@@ -49,7 +49,7 @@
 
      @Message shown app sucessfully run on port 3000.
 
-     - Backend will be manage in SpringBoot Tool
+  - Backend will be manage in SpringBoot Tool
      - create new Spring Project else directly open the cloned backend project in spring boot by importing it to the environment.
      - update the project 
      - go to application properties do the respective changes as per your database. 
