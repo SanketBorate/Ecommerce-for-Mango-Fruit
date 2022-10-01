@@ -1,9 +1,12 @@
 # Project_Group_08
 
 ## Ecommerce System for Mango
-  It provides solution to farmers and customer  to sell and buy quality product. 
-  Middle man's cost is avoided.
-  Direct profit to Farmers and Customers.
+The system introduces, promote and manage mangoes of different variety cutting middle man costs. This system ensures that the end user get the fresh product directly from the farmer for the best market price. 
+System allow authenticated user to order mangoes of different variety from their places by selecting as per availability mangoes.
+Farmers get verified and only verified farmers are allowing to register which will give assurance to customer that they get the good quality mangoes.
+Authenticated farmer (seller) will modify the product details and delivery details (drop shipping at seller end) as per availability and status will update on platform. 
+Admin can access all the functionalities of customer and seller. Admin can monitor order and sales reports.
+
  
 ### Used Technologies:
 
