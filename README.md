@@ -4,12 +4,17 @@
   It provides solution to farmers and customer  to sell and buy quality product. 
   Middle man's cost is avoided.
   Direct profit to Farmers and Customers.
+ 
+### Used Technologies:
+  -Backend: Spring Boot,JPA/Hibernate,MySQL.
+  -Frontend: HTML,CSS,Bootsrap,React.JS,JavaScript
+  -Other:Github,StarUML,draw.io
 
-### Installation
+#### Installation
   - Make a new folder on your machine and clone project using link https://github.com/SanketBorate/Ecommerce-for-Mango-Fruit.git.
 
   - Make new Environment to run the project.
-    ** Frontend will be manage in vscode Tool.
+     - Frontend will be manage in vscode Tool.
      - create new React project.
        npx create-react-app MangoEcommerceApp
      - install node modules use below command
@@ -19,9 +24,6 @@
     
     "@emotion/react": "^11.10.4",
     "@mui/icons-material": "^5.10.3",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "jwt-decode": "^3.1.2",
     "react": "^18.2.0",
@@ -46,5 +48,5 @@
        eg:- username password make connection to database .
      - run the project on inbuild tomcat 8080 port
 
-#### Your web Application is ready to use on your machine.
+##### Your web Application is ready to use on your machine.
    
